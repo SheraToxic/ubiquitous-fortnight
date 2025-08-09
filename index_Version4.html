@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biotech Jobs for Grads</title>
+    <style>
+        body {
+            background-color: #f5f5f5;
+            color: #222;
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+        header {
+            background-color: #2d5f4f;
+            color: #fff;
+            padding: 30px 0 20px 0;
+            text-align: center;
+        }
+        h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+        .container {
+            max-width: 700px;
+            margin: 40px auto;
+            background: #fff;
+            box-shadow: 0 0 12px rgba(0,0,0,0.08);
+            border-radius: 8px;
+            padding: 30px;
+        }
+        .job-listing {
+            border-bottom: 1px solid #eee;
+            padding: 18px 0;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .job-listing:last-child {
+            border-bottom: none;
+        }
+        .job-listing:hover {
+            background: #e9f5ef;
+        }
+        .job-title {
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+        .company {
+            color: #2d5f4f;
+        }
+        .location {
+            color: #888;
+        }
+        #popup {
+            display: none;
+            position: fixed;
+            top: 50%; left: 50%;
+            transform: translate(-50%, -50%);
+            background: #fff;
+            border: 2px solid #2d5f4f;
+            box-shadow: 0 6px 24px rgba(0,0,0,0.2);
+            padding: 32px;
+            z-index: 9999;
+            border-radius: 12px;
+            text-align: center;
+        }
+        #popup h2 {
+            color: #c41126;
+        }
+        #closeBtn {
+            margin-top: 18px;
+            padding: 8px 22px;
+            font-size: 1em;
+            background: #2d5f4f;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        footer {
+            text-align: center;
+            color: #aaa;
+            margin: 32px 0 8px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Biotech Jobs for Grads</h1>
+        <p>Find your dream job in biotechnology!</p>
+    </header>
+    <div class="container">
+        <div class="job-listing" onclick="showPrank()">
+            <span class="job-title">Junior Research Associate</span>
+            <span class="company"> - GenLife Labs</span><br>
+            <span class="location">Bahawalpur</span>
+        </div>
+        <div class="job-listing" onclick="showPrank()">
+            <span class="job-title">Entry-Level Lab Technician</span>
+            <span class="company"> - BioNext</span><br>
+            <span class="location">Sargodha</span>
+        </div>
+        <div class="job-listing" onclick="showPrank()">
+            <span class="job-title">Clinical Data Analyst</span>
+            <span class="company"> - FutureBio Inc.</span><br>
+            <span class="location">Faisalabad</span>
+        </div>
+        <div class="job-listing" onclick="showPrank()">
+            <span class="job-title">Biotech Sales Trainee</span>
+            <span class="company"> - Cellify Solutions</span><br>
+            <span class="location">Islamabad</span>
+        </div>
+        <div class="job-listing" onclick="showPrank()">
+            <span class="job-title">Quality Assurance Assistant</span>
+            <span class="company"> - GreenGene</span><br>
+            <span class="location">Lahore</span>
+        </div>
+    </div>
+    <div id="popup">
+        <h2>🎉 Pranked! 🎉</h2>
+        <p>You thought you were about to apply for your dream job...<br>
+        But this is just a prank for you! 😜</p>
+        <button id="closeBtn" onclick="closePrank()">Ok, got me!</button>
+    </div>
+    <footer>
+        &copy; 2025 Biotech Jobs for Grads®. All rights reserved.
+    </footer>
+    <script>
+        function showPrank() {
+            document.getElementById("popup").style.display = "block";
+        }
+        function closePrank() {
+            document.getElementById("popup").style.display = "none";
+        }
+    </script>
+</body>
+</html>
