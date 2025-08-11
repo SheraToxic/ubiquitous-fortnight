@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BioTech Job Opportunities</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f9;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        h1 {
+            color: #2c3e50;
+            animation: fadeIn 1s ease-in;
+        }
+        .job-listing {
+            background: white;
+            padding: 20px;
+            margin: 10px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: left;
+            opacity: 0;
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+        /* Staggered animation for each job listing */
+        .job-listing:nth-child(1) { animation-delay: 0.2s; }
+        .job-listing:nth-child(2) { animation-delay: 0.4s; }
+        .job-listing:nth-child(3) { animation-delay: 0.6s; }
+        .job-listing:nth-child(4) { animation-delay: 0.8s; }
+        .job-listing:nth-child(5) { animation-delay: 1.0s; }
+        .job-listing:nth-child(6) { animation-delay: 1.2s; }
+        .job-listing h3 {
+            color: #2980b9;
+            margin: 0 0 10px;
+        }
+        .job-listing p {
+            color: #34495e;
+        }
+        .job-listing a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+        .job-listing a:hover {
+            transform: scale(1.1);
+            background-color: #e74c3c; /* Red hover for prank vibe */
+        }
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Exciting Job Opportunities for Biotechnology Graduates!</h1>
+        <p>Explore these amazing career opportunities tailored for fresh Biotech graduates.</p>
+
+        <div class="job-listing">
+            <h3>Junior Research Scientist</h3>
+            <p>Join BioInnovate Labs to work on cutting-edge gene editing projects. No experience required!</p>
+            <a href="popup.html" target="_blank">Apply Now</a>
+        </div>
+
+        <div class="job-listing">
+            <h3>Biotech Lab Technician</h3>
+            <p>Assist in groundbreaking research at GenTech Solutions. Perfect for fresh graduates!</p>
+            <a href="popup.html" target="_blank">Apply Now</a>
+        </div>
+
+        <div class="job-listing">
+            <h3>Clinical Trial Assistant</h3>
+            <p>Support clinical research at MediBio Corp. Great opportunity to start your career!</p>
+            <a href="popup.html" target="_blank">Apply Now</a>
+        </div>
+
+        <div class="job-listing">
+            <h3>Bioinformatics Analyst</h3>
+            <p>Analyze genomic data at DataBio Inc. Ideal for tech-savvy Biotech grads!</p>
+            <a href="popup.html" target="_blank">Apply Now</a>
+        </div>
+
+        <div class="job-listing">
+            <h3>Quality Control Specialist</h3>
+            <p>Ensure product safety at BioSafe Industries. Entry-level position with training!</p>
+            <a href="popup.html" target="_blank">Apply Now</a>
+        </div>
+
+        <div class="job-listing">
+            <h3>Biotech Sales Representative</h3>
+            <p>Promote innovative biotech products at VitaTech. No prior sales experience needed!</p>
+            <a href="popup.html" target="_blank">Apply Now</a>
+        </div>
+    </div>
+</body>
+</html>
